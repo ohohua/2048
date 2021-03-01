@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2048</title>
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="shortcut icon" href="./static/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+  <div class="outermost">
+    <!-- message -->
+    <div class="message">
+      <h1>2048</h1>
+      <button onclick="btnclick()">New Game</button>
+      <br>
+      <b>
+        score:
+        <span id="score">
+          0
+        </span>
+      </b>
+      <p>按上、下、左、右键，即可开始游戏</p>
+
+      <div id="gameover" style="display: none;">Game Over</br>Please click the 'New Game'</div>
+    </div>
+    <div class="chessboard">
+      <div class="cell" id="c00"></div>
+      <div class="cell" id="c01"></div>
+      <div class="cell" id="c02"></div>
+      <div class="cell" id="c03"></div>
+
+      <div class="cell" id="c10"></div>
+      <div class="cell" id="c11"></div>
+      <div class="cell" id="c12"></div>
+      <div class="cell" id="c13"></div>
+
+      <div class="cell" id="c20"></div>
+      <div class="cell" id="c21"></div>
+      <div class="cell" id="c22"></div>
+      <div class="cell" id="c23"></div>
+
+      <div class="cell" id="c30"></div>
+      <div class="cell" id="c31"></div>
+      <div class="cell" id="c32"></div>
+      <div class="cell" id="c33"></div>
+    </div>
+
+  </div>
+  <audio src="../static/1.mp3" id="music">
+    Your browser does not support the audio element.
+    </audio>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
